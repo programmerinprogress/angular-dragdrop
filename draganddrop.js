@@ -138,7 +138,7 @@
                     element.bind('$destroy', dragendHandler);
 
                     //Code to make sure that the setDragImage is available. IE 10, 11, and Opera do not support setDragImage.
-                    var hasNativeDraggable = !(document.uniqueID || window.opera);
+                    var hasNativeDraggable = true;
 
                     //If there is a draggable image passed in, then set the image to be dragged.
                     if (dragImage && hasNativeDraggable) {
